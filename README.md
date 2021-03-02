@@ -6,6 +6,49 @@ A modern way to build an application with Node.js.
 Bullet point code       = alt + 0149
 triangular bullet point = alt + 8227
 
+baby steps
+
+    install node
+
+    create a package.json file on the root folder by using: npm init
+
+    what we need?
+        express (framework)
+        socket.io(Library to deal with websockets)
+        moment (date and time formatter)
+        nodemon (to update the page every update is made) -D dev dependency required just for build the application
+
+        npm install express socket.io moment
+        and
+        npm install -D nodemon (uppercase -D means devdependency)
+
+        changing the package.json
+            we don't need at scripts, the "test", change for "start".
+
+            "start": "node server"
+            "dev": "nodemon server"
+
+        Create a regular server
+        
+        at server.js
+            const express = require('express');
+            const app = express();
+            
+            const PORT = 300 || process.env.PORT (this process.env.PORT is required if you're trying to run your server on some host that doesn't allow you to run on the port you want.)
+
+            app.listen(PORT, () => console.log(`server running on port ${PORT}`));
+
+        Create your Static Folder
+
+            You'll need a static folder to access the frontend
+
+            at the beginning you'll need the "path" module.
+
+            const path = require('path');
+
+            and then, you can set the directory of your static folder
+
+            app.use(express.static(path.join(__dirname, 'public')));
 
 Steps
 
@@ -60,10 +103,21 @@ Steps
 
             ## in the HTML file, writes a script tag with src="/socket.io/socket.io.js" to use the library on the front-end.
             ## don't forget to link the main.js too
+            
+const            We have to access the io method through the main.js, and define the socket package
+            at main.js file:
+
+                const socket = io();
+
+            Every time someone refresh the page a new WS connection will be set.
 
         - Message from the server to the client
+            
+            on the server.js file
 
-            socket.emit('message', 'Welcome new comer');
+                inside io.on() you can send messages to the client through:
+                
+                    socket.emit('message', 'Welcome new comer');
 
             ## the way to you be able to display this message on the front is through the main.js.
 

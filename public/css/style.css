@@ -1,0 +1,64 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    margin: 20px auto;
+    background-color: rgb(29, 82, 27);
+    height: 400px;
+    width: 550px;
+    border-radius: 6px;
+}
+
+.chat {
+    margin: auto;
+    height: 49%;
+    width: 79%;
+}
+
+.form-field {
+    margin: 15% auto;
+    text-align: center;
+}
+
+.title-logo {
+    padding-top: 10px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+legend {
+    color: #ccc;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 9px 10px;
+    color: #fff;
+    background-color: rgb(29, 160, 40);
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(27, 163, 50);
+}
+
+select {
+    border: none;
+}

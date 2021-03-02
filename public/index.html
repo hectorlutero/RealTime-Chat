@@ -4,11 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+    
+    <div class="container">
+        <div class="chat">
+            <div class="title-logo">
+                <h1>SimanChat</h1>
+            </div>
+            <div class="form-field">
+                <legend>Username</legend>
+                <input type="text" name="username" id="username">
+                <legend>Room</legend>
+                <select class="custom-select" name="room" id="room">
+                    <option value="Work">Work</option>
+                    <option value="Games">Games</option>
+                    <option value="Music">Music</option>
+                </select>
+
+                <input type="submit" value="Enter"></input>
+            </div>
+        </div>
+    </div>
     <script src="/socket.io/socket.io.js"></script>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

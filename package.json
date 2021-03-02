@@ -1,11 +1,19 @@
 {
-  "name": "simanchat",
-  "version": "1.0.0",
-  "description": "A real time chat using Node.js",
-  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "socket.io": "^3.1.2"
+  },
   "scripts": {
     "start": "node server",
     "dev": "nodemon server"
+  },
+  "name": "simanchat",
+  "description": "A realtime chat project made in Node.js",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   },
   "repository": {
     "type": "git",
@@ -19,13 +27,5 @@
   "bugs": {
     "url": "https://github.com/hectorlutero/RealTime-Chat/issues"
   },
-  "homepage": "https://github.com/hectorlutero/RealTime-Chat#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "moment": "^2.29.1",
-    "socket.io": "^3.1.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.7"
-  }
+  "homepage": "https://github.com/hectorlutero/RealTime-Chat#readme"
 }
