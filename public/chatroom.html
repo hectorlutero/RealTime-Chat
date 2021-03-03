@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container-chatroom">    
+            <div class="header">
+                <div class="logo"></div>
+            </div>
+            <div class="sidebar-menu">
+                <div class="room">
+                    <h3>Room</h3>
+                    <h2>Games</h2>
+                </div>
+                <div class="users">
+                    <h3>Users</h3>
+                    <ul>
+                        <li>John</li>
+                        <li>Peter</li>
+                        <li>James</li>
+                        <li>Jesus</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="message-board">
+
+            </div>
+            <div class="message-input">
+                <input type="text" name="msg" id="msg">
+                <input type="button" value="Send">
+            </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
